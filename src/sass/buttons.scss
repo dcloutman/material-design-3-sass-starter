@@ -1,0 +1,12 @@
+$button-border-radius: 1em;
+$button-outlined-border-width: 1px;
+
+button {
+    border-radius: $button-border-radius;
+    padding: 0 1em;
+    line-height: 2;
+}
+
+button.outlined {
+    border-width: $button-outlined-border-width;
+}

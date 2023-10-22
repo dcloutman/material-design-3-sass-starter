@@ -1,0 +1,80 @@
+/* Primary key color: Base color. */
+$color-primary: #616200;
+
+/* On-primary is applied to content (text, icons, etc.) that sits on top of primary. */
+$color-on-primary: #FFF;
+
+/* Primary container is applied to elements needing less emphasis than primary. */
+$color-primary-container:#E8E970;
+
+/* On-primary container is applied to content (icons, text, etc.) that sits on top of primary container. */
+$color-primary-on-container: #072100;
+
+
+
+$color-secondary:#55624C;
+$color-on-secondary: #FFFFFF;
+$color-secondary-container: #131F0D;
+$color-on-secondary-container: #D8E6CA;
+
+$color-tertiary:#386666;
+$color-on-tertiary: #FFF;
+$color-tertiary-container: #BBEBEC;
+$color-tertiary-on-container: #002020;
+
+@mixin color-pair-primary {
+    background-color: $color-primary;
+    color: $color-on-primary;
+}
+
+@mixin color-pair-primary-container {
+    background-color: $color-primary-container;
+    color: $color-primary-on-container;
+}
+
+.color-pair-primary {
+    @include color-pair-primary;
+}
+
+.color-pair-primary-container {
+    @include color-pair-primary-container;
+}
+
+
+@mixin color-pair-secondary {
+    background-color: $color-secondary;
+    color: $color-on-secondary;
+}
+
+@mixin color-pair-secondary-container {
+    background-color: $color-secondary-container;
+    color: $color-on-secondary-container;
+}
+
+.color-pair-secondary {
+    @include color-pair-secondary;
+}
+
+
+.color-pair-secondary-container {
+    @include color-pair-secondary-container;
+}
+
+
+@mixin color-pair-tertiary {
+    background-color: $color-tertiary;
+    color: $color-on-tertiary;
+}
+
+@mixin color-pair-tertiary-container {
+    background-color: $color-tertiary-container;
+    color: $color-tertiary-on-container;
+}
+
+.color-pair-tertiary {
+    @include color-pair-tertiary;
+}
+
+.color-pair-tertiary-container {
+    @include color-pair-tertiary-container;
+}

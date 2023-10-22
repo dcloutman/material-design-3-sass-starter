@@ -1,0 +1,224 @@
+// Master font size. Must be absolute. All em values are scaled to 
+// this value.
+$base-size: 14px;
+
+// Material Design documentation uses Roboto as an example. It can be downloaded from:
+// https://fonts.google.com/specimen/Roboto
+$font-main: Roboto;
+
+// Space Mono and Rokkitt have been listed as a good pairings for Roboto.
+$font-expressive-primary: "Space Mono";
+$font-expressive-secondary: "Rokkitt";
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Imports Roboto from the Google CDN. It is better practice to download your fonts and serve them with your 
+//  other static content.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@mixin body-large {
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 1.14286em;
+    letter-spacing: 0.035714em;
+    line-height: 1.5;      
+
+}
+
+@mixin body-medium {
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: $base-size;
+    letter-spacing: 0.01786em;
+    line-height: 1.42857;
+}    
+
+@mixin body-small {
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: .85714em;
+    letter-spacing: 0.02857em;
+    line-height: 1.33333;    
+}
+
+body, .md.sys.typescale.body-medium, .body-medium {
+    @include body-medium;
+}
+
+
+.md.sys.typescale.body-large, .body-large {
+    @include body-large;
+}
+
+.md.sys.typescale.body-small, .body-small {
+    @include body-small;
+}
+
+/*
+    Display fonts.
+    
+
+    Display values have no intrinsic increased semantic value. These should used to
+    style text for the purpose of visual emphasis only, as they are intented to
+    be decrative. As per Material Design:
+
+        As the largest text on the screen, display styles are reserved for short, 
+        important text or numerals. They work best on large screens.
+
+        For display type, consider choosing a more expressive font, such as a handwritten or script style.
+
+        https://m3.material.io/styles/typography/applying-type
+*/
+
+@mixin display-large {
+    font-family: $font-expressive-primary;
+    font-weight: 400;
+    font-size: 4.07143em;
+    letter-spacing: -0.01789em;
+    line-height: 1.1228;
+}
+
+@mixin display-medium {
+    font-family: $font-expressive-primary;
+    font-weight: 400;
+    font-size: 3.21429em;
+    letter-spacing: 0;
+    line-height: 1.15556;
+}
+
+@mixin display-small {
+    font-family: $font-expressive-primary;
+    font-weight: 400;
+    font-size: 2.75em;
+    letter-spacing: 0;
+    line-height: 1.22223;
+}
+
+.md.sys.typescale.display-large, .display-large {
+    @include display-large;
+}
+
+.md.sys.typescale.display-medium, .display-medium {
+    @include display-medium;
+}
+
+.md.sys.typescale.display-small, .display-small {
+    @include display-small;
+}
+
+
+/*
+    "Titles"
+
+    Titles are a Material Design concept that does not directly map to HTML. Using h4-h6 tags as synonyms 
+    with the three sizes of title will negatively impact your SEO. Usage in a semantically neutral way or 
+    as a utility class on a h1-h3 tag is recommended.
+
+    Titles, as defined my Material Design 3 documentation: 
+
+        Titles are smaller than headline styles, and should be used for medium-emphasis text that remains 
+        relatively short. For example, consider using title styles to divide secondary passages of text 
+        or secondary regions of content.
+
+        For titles, use caution when using expressive fonts, including display, handwritten, and script 
+        styles.
+
+        https://m3.material.io/styles/typography/applying-type
+*/
+@mixin title-large {
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 1.57143em;
+    letter-spacing: 0;
+    line-height: 2;
+}
+
+@mixin title-medium {
+    font-family: $font-main;
+    font-weight: 500;
+    font-size: 1.14286em;
+    letter-spacing: 0.01071em;
+    line-height: 1.71429;  
+}
+
+@mixin title-small {
+    font-family: $font-main;
+    font-weight: 500;
+    font-size: 1.14286em;
+    letter-spacing: 0.00714em;
+    line-height: 1.42857;
+}
+
+h1, md.sys.typescale.title-large, .title-large {
+    @include title-large;
+}
+
+h2, md.sys.typescale.title-medium, .title-medium {
+    @include title-medium;
+}
+
+h3, md.sys.typescale.title-small, .title-small {
+    @include title-small;
+}
+
+
+
+/*
+    Headers
+
+    Here's what the Material Design 3 documentation says about headlines:
+
+        Headlines are best-suited for short, high-emphasis text on smaller screens. These styles can be good for 
+        marking primary passages of text or important regions of content.
+
+        Headlines can also make use of expressive typefaces, provided that appropriate line height and letter 
+        spacing is also integrated to maintain readability.
+
+        https://m3.material.io/styles/typography/applying-type
+
+*/
+md.sys.typescale.headline-large, .headline-large {
+    font-family: $font-expressive-secondary;
+    font-weight: 400;
+    font-size: 2em;
+    letter-spacing: 0;
+    line-height: 2.5;  
+}
+
+md.sys.typescale.headline-medium, .headline-medium {
+    font-family: $font-expressive-secondary;
+    font-weight: 400;
+    font-size: 1.75em;
+    letter-spacing: 0;
+    line-height: 2.25;  
+}
+
+md.sys.typescale.headline-small, .headline-small {
+    font-family: $font-expressive-secondary;
+    font-weight: 400;
+    font-size: 1.5em;
+    letter-spacing: 0;
+    line-height: 2;
+}
+
+/*  
+    Small Headers
+
+    Material Design doesn't map precisely to HTML. These tags, which rank semantically below the body text, 
+    do not have a precise analog. These are useful in limited applications, such as footer content, which 
+    shouldn't drive search traffic. Because of this, we will map these tags to the relative sizes of the body
+    text.
+*/
+h4 {
+    @include body-large;
+}
+
+h5 {
+    @include body-medium;
+}
+
+h6 {
+    @include body-small;
+}
