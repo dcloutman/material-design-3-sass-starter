@@ -4,6 +4,7 @@ address, article, aside, blockquote, canvas, dd, div, dl, dt, fieldset, figcapti
 footer, form, h1, h2, h3, h4, h5, h6, header, hr, li, main, nav, noscript, ol, p, pre, section, 
 table, tfoot, ul, video {
     overflow: auto;
+    box-sizing: border-box;
 }
 
 body {
@@ -18,4 +19,16 @@ main {
     padding: 0 1em;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-example {
+    width: 25vw;
+    height: 25vw;
 }
