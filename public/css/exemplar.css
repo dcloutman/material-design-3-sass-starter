@@ -31,4 +31,5 @@ main {
 .card-example {
     width: 25vw;
     height: 25vw;
+    margin-bottom: 1em;
 }
