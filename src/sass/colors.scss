@@ -1,3 +1,6 @@
+/*  */
+$color-body-background: #FFF;
+
 /* Primary key color: Base color. */
 $color-primary: #616200;
 
@@ -10,8 +13,6 @@ $color-primary-container:#E8E970;
 /* On-primary container is applied to content (icons, text, etc.) that sits on top of primary container. */
 $color-primary-on-container: #072100;
 
-
-
 $color-secondary:#55624C;
 $color-on-secondary: #FFFFFF;
 $color-secondary-container: #131F0D;
@@ -21,6 +22,18 @@ $color-tertiary:#386666;
 $color-on-tertiary: #FFF;
 $color-tertiary-container: #BBEBEC;
 $color-tertiary-on-container: #002020;
+
+body {
+    background-color: $color-body-background;
+}
+
+.color-body-background {
+    color: $color-body-background;
+}
+
+.color-background-body-background {
+    background-color: $color-body-background;
+}
 
 @mixin color-pair-primary {
     background-color: $color-primary;
