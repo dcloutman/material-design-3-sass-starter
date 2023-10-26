@@ -21,7 +21,130 @@ $color-on-secondary-container: #D8E6CA;
 $color-tertiary:#386666;
 $color-on-tertiary: #FFF;
 $color-tertiary-container: #BBEBEC;
-$color-tertiary-on-container: #002020;
+$color-on-tertiary-container: #002020;
+
+$color-error: #B3261E;
+$color-on-error: #FFF;
+$color-error-container: #F9DEDC;
+$color-on-error-container: #410E0B;
+
+/*
+The neutral key color is used to derive surface color roles for backgrounds, as well as colors 
+used for high emphasis text and icons.
+*/
+$color-neutral: #5D5F5A;
+
+/*
+The neutral variant key color is used to derive color roles for medium emphasis elements like text,
+icons, and component outlines.
+*/
+$color-neutral-variant: #5B6056;
+
+$color-surface: #F8FAF0;
+$color-surface-dim: #D9DBD1;
+$color-surface-bright: #F8FAF0;
+
+$color-surface-container: #1A1C18;
+$color-surface-container-lowest: #FFFFFF;
+$color-surface-container-low: #F3F5EB;
+$color-surface-container-high: #74796D;
+$color-surface-container-highest: #C3C8BB;
+
+$color-on-surface: #1A1C18;
+$color-on-surface-variant: #43483E;
+
+$color-outline: #74796D;
+$color-outline-variant: #C3C8BB;
+
+@mixin color-pair-surface {
+    color: $color-on-surface;
+    background-color: $color-surface;
+}
+
+@mixin color-pair-surface-variant {
+    color: $color-on-surface;
+    background-color: $color-surface;
+}
+
+@mixin color-pair-surface-dim {
+    color: $color-on-surface;
+    background-color: $color-surface-dim;
+}
+
+@mixin color-pair-surface-dim-variant {
+    color: $color-on-surface-variant;
+    background-color: $color-surface-dim;
+}
+
+@mixin color-pair-surface-bright {
+    color: $color-on-surface;
+    background-color: $color-surface-bright;
+}
+
+@mixin color-pair-surface-bright-variant {
+    color: $color-on-surface-variant;
+    background-color: $color-surface-bright;
+}
+
+@mixin color-pair-surface-container {
+    color: $color-on-surface;
+    background-color: $color-surface-container;
+}
+
+@mixin color-pair-surface-container-variant {
+    color: $color-on-surface-variant;
+    background-color: $color-surface-container;
+}
+
+@mixin color-pair-surface-container-lowest {
+    color: $color-on-surface;
+    background-color: $color-surface-container-lowest;
+}
+
+@mixin color-pair-surface-container-lowest-variant {
+    color: $color-on-surface-variant;
+    background-color: $color-surface-container-lowest;
+}
+
+@mixin color-pair-surface-container-low {
+    color: $color-on-surface;
+    background-color: $color-surface-container-low;
+}
+
+@mixin color-pair-surface-container-low-variant {
+    color: $color-on-surface-variant;
+    background-color: $color-surface-container-low;
+}
+
+@mixin color-pair-surface-container-high {
+    color: $color-on-surface;
+    background-color: $color-surface-container-high;
+}
+
+@mixin color-pair-surface-container-high-variant {
+    color: $color-on-surface-variant;
+    background-color: $color-surface-container-high;
+}
+
+@mixin color-pair-surface-container-highest {
+    color: $color-on-surface;
+    background-color: $color-surface-container-highest;
+}
+
+@mixin color-pair-surface-container-highest-variant {
+    color: $color-on-surface-variant;
+    background-color: $color-surface-container-highest;
+}
+
+@mixin color-pair-error {
+    color: $color-on-error;
+    background-color: $color-error;
+}
+
+@mixin color-pair-error-container {
+    color: $color-on-error-container;
+    background-color: $color-error-container;
+}
 
 body {
     background-color: $color-body-background;
@@ -42,7 +165,7 @@ body {
 
 @mixin color-pair-primary-container {
     background-color: $color-primary-container;
-    color: $color-primary-on-container;
+    color: $color-on-primary;
 }
 
 .color-pair-primary {
@@ -81,7 +204,7 @@ body {
 
 @mixin color-pair-tertiary-container {
     background-color: $color-tertiary-container;
-    color: $color-tertiary-on-container;
+    color: $color-on-tertiary-container;
 }
 
 .color-pair-tertiary {
