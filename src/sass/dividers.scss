@@ -1,0 +1,48 @@
+@use 'colors';
+
+$divider-normal-thickness: 1px;
+$divider-normal-style: solid;
+
+$divider-normal-margin-sides: 1em;
+$divider-normal-margin-top: 2em;
+$divider-normal-margin-bottom: 2em;
+
+@mixin hr-reset {
+    border-left: 0;
+    border-bottom: 0;
+    border-right: 0;
+}
+
+@mixin normal {
+    margin: $divider-normal-margin-top $divider-normal-margin-sides $divider-normal-margin-bottom $divider-normal-margin-sides;
+}
+
+hr, hr.normal-primary {
+    margin-top: $divider-normal-thickness $divider-normal-style colors.$color-primary;
+    @include hr-reset;
+    @include normal;
+}
+
+hr.normal-secondary {
+    margin-top: $divider-normal-thickness $divider-normal-style colors.$color-secondary;
+    @include hr-reset;
+    @include normal;
+}
+
+hr.normal-tertiary {
+    margin-top: $divider-normal-thickness $divider-normal-style colors.$color-tertiary;
+    @include hr-reset;
+    @include normal;
+}
+
+hr.normal-neutral {
+    margin-top: $divider-normal-thickness $divider-normal-style colors.$color-neutral;
+    @include hr-reset;
+    @include normal;
+}
+
+hr.normal-neutral-variant {
+    margin-top: $divider-normal-thickness $divider-normal-style colors.$color-neutral-variant;
+    @include hr-reset;
+    @include normal;
+}
