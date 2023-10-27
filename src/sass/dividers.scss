@@ -37,31 +37,31 @@ $divider-thick-margin-bottom: 4em;
 }
 
 hr, hr.normal-primary {
-    margin-top: $divider-normal-thickness $divider-normal-style colors.$color-primary;
+    border-top: $divider-normal-thickness $divider-normal-style colors.$color-primary;
     @include hr-reset;
     @include normal;
 }
 
 hr.normal-secondary {
-    margin-top: $divider-normal-thickness $divider-normal-style colors.$color-secondary;
+    border-top: $divider-normal-thickness $divider-normal-style colors.$color-secondary;
     @include hr-reset;
     @include normal;
 }
 
 hr.normal-tertiary {
-    margin-top: $divider-normal-thickness $divider-normal-style colors.$color-tertiary;
+    border-top: $divider-normal-thickness $divider-normal-style colors.$color-tertiary;
     @include hr-reset;
     @include normal;
 }
 
 hr.normal-neutral {
-    margin-top: $divider-normal-thickness $divider-normal-style colors.$color-neutral;
+    border-top: $divider-normal-thickness $divider-normal-style colors.$color-neutral;
     @include hr-reset;
     @include normal;
 }
 
 hr.normal-neutral-variant {
-    margin-top: $divider-normal-thickness $divider-normal-style colors.$color-neutral-variant;
+    border-top: $divider-normal-thickness $divider-normal-style colors.$color-neutral-variant;
     @include hr-reset;
     @include normal;
 }
@@ -69,62 +69,62 @@ hr.normal-neutral-variant {
 
 
 hr.thin-primary {
-    margin-top: $divider-thin-thickness $divider-thin-style colors.$color-primary;
+    border-top: $divider-thin-thickness $divider-thin-style colors.$color-primary;
     @include hr-reset;
     @include thin;
 }
 
 hr.thin-secondary {
-    margin-top: $divider-thin-thickness $divider-thin-style colors.$color-secondary;
+    border-top: $divider-thin-thickness $divider-thin-style colors.$color-secondary;
     @include hr-reset;
     @include thin;
 }
 
 hr.thin-tertiary {
-    margin-top: $divider-thin-thickness $divider-thin-style colors.$color-tertiary;
+    border-top: $divider-thin-thickness $divider-thin-style colors.$color-tertiary;
     @include hr-reset;
     @include thin;
 }
 
 hr.thin-neutral {
-    margin-top: $divider-thin-thickness $divider-thin-style colors.$color-neutral;
+    border-top: $divider-thin-thickness $divider-thin-style colors.$color-neutral;
     @include hr-reset;
     @include thin;
 }
 
 hr.thin-neutral-variant {
-    margin-top: $divider-thin-thickness $divider-thin-style colors.$color-neutral-variant;
+    border-top: $divider-thin-thickness $divider-thin-style colors.$color-neutral-variant;
     @include hr-reset;
     @include normal;
 }
 
 
 hr.thick-primary {
-    margin-top: $divider-thick-thickness $divider-thick-style colors.$color-primary;
+    border-top: $divider-thick-thickness $divider-thick-style colors.$color-primary;
     @include hr-reset;
     @include thick;
 }
 
 hr.thick-secondary {
-    margin-top: $divider-thick-thickness $divider-thick-style colors.$color-secondary;
+    border-top: $divider-thick-thickness $divider-thick-style colors.$color-secondary;
     @include hr-reset;
     @include thick;
 }
 
 hr.thick-tertiary {
-    margin-top: $divider-thick-thickness $divider-thick-style colors.$color-tertiary;
+    border-top: $divider-thick-thickness $divider-thick-style colors.$color-tertiary;
     @include hr-reset;
     @include thick;
 }
 
 hr.thick-neutral {
-    margin-top: $divider-thick-thickness $divider-thick-style colors.$color-neutral;
+    border-top: $divider-thick-thickness $divider-thick-style colors.$color-neutral;
     @include hr-reset;
     @include thick;
 }
 
 hr.thick-neutral-variant {
-    margin-top: $divider-thick-thickness $divider-thick-style colors.$color-neutral-variant;
+    border-top: $divider-thick-thickness $divider-thick-style colors.$color-neutral-variant;
     @include hr-reset;
     @include normal;
 }
