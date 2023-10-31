@@ -8,10 +8,10 @@ $color-primary: #616200;
 $color-on-primary: #FFF;
 
 /* Primary container is applied to elements needing less emphasis than primary. */
-$color-primary-container:#E8E970;
+$color-primary-container:#B7F397;
 
 /* On-primary container is applied to content (icons, text, etc.) that sits on top of primary container. */
-$color-primary-on-container: #072100;
+$color-on-primary-container: #042100;
 
 $color-secondary:#55624C;
 $color-on-secondary: #FFFFFF;
@@ -165,7 +165,7 @@ body {
 
 @mixin color-pair-primary-container {
     background-color: $color-primary-container;
-    color: $color-on-primary;
+    color: $color-on-primary-container;
 }
 
 .color-pair-primary {
