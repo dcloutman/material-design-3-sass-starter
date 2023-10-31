@@ -33,3 +33,11 @@ main {
     height: 25vw;
     margin-bottom: 1em;
 }
+
+.margin-top-1em {
+    margin-top: 1em;
+}
+
+.margin-bottom-1em {
+    margin-bottom: 1em;
+}
