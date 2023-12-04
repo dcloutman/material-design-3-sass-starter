@@ -9,7 +9,7 @@
 //    also ignores standard design terminolgy with, sometimes creative, property names, which makes
 //    mapping Material Design terms to CSS confusing for both parties.
 //
-//    "font tracking" - In CSS this is controlled by the letter-spacing property. Most designers call 
+//    "font tracking" - In CSS this is controlled by the letter-spacing property. Most designers call
 //        this "kearning".
 //    "line height" - Surprisingly, this maps correctly to the line-height attribute, though historically
 //        this is called "leading" (as in the metal) in the design profession.
@@ -17,7 +17,8 @@
 //
 //    Typographic examples are derived from: https://m3.material.io/styles/typography/type-scale-tokens
 
-@use 'typography';
-@use 'colors';
-@use 'buttons';
-@use 'dividers';
+@use "reset";
+@use "typography";
+@use "colors";
+@use "buttons";
+@use "dividers";
