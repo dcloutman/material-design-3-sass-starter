@@ -1,150 +1,60 @@
 /*  */
-$color-body-background: #FFF;
+$color-body-background: #fff;
 
 /* Primary key color: Base color. */
 $color-primary: #616200;
 
 /* On-primary is applied to content (text, icons, etc.) that sits on top of primary. */
-$color-on-primary: #FFF;
+$color-on-primary: #fff;
 
 /* Primary container is applied to elements needing less emphasis than primary. */
-$color-primary-container:#B7F397;
+$color-primary-container: #b7f397;
 
 /* On-primary container is applied to content (icons, text, etc.) that sits on top of primary container. */
 $color-on-primary-container: #042100;
 
-$color-secondary:#55624C;
-$color-on-secondary: #FFFFFF;
-$color-secondary-container: #131F0D;
-$color-on-secondary-container: #D8E6CA;
+$color-secondary: #55624c;
+$color-on-secondary: #ffffff;
+$color-secondary-container: #131f0d;
+$color-on-secondary-container: #d8e6ca;
 
-$color-tertiary:#386666;
-$color-on-tertiary: #FFF;
-$color-tertiary-container: #BBEBEC;
+$color-tertiary: #386666;
+$color-on-tertiary: #fff;
+$color-tertiary-container: #bbebec;
 $color-on-tertiary-container: #002020;
 
-$color-error: #B3261E;
-$color-on-error: #FFF;
-$color-error-container: #F9DEDC;
-$color-on-error-container: #410E0B;
+$color-error: #b3261e;
+$color-on-error: #fff;
+$color-error-container: #f9dedc;
+$color-on-error-container: #410e0b;
 
 /*
 The neutral key color is used to derive surface color roles for backgrounds, as well as colors 
 used for high emphasis text and icons.
 */
-$color-neutral: #5D5F5A;
+$color-neutral: #5d5f5a;
 
 /*
 The neutral variant key color is used to derive color roles for medium emphasis elements like text,
 icons, and component outlines.
 */
-$color-neutral-variant: #5B6056;
+$color-neutral-variant: #5b6056;
 
-$color-surface: #F8FAF0;
-$color-surface-dim: #D9DBD1;
-$color-surface-bright: #F8FAF0;
+$color-surface: #f8faf0;
+$color-surface-dim: #d9dbd1;
+$color-surface-bright: #f8faf0;
 
-$color-surface-container: #1A1C18;
-$color-surface-container-lowest: #FFFFFF;
-$color-surface-container-low: #F3F5EB;
-$color-surface-container-high: #74796D;
-$color-surface-container-highest: #C3C8BB;
+$color-surface-container: #1a1c18;
+$color-surface-container-lowest: #ffffff;
+$color-surface-container-low: #f3f5eb;
+$color-surface-container-high: #74796d;
+$color-surface-container-highest: #c3c8bb;
 
-$color-on-surface: #1A1C18;
-$color-on-surface-variant: #43483E;
+$color-on-surface: #1a1c18;
+$color-on-surface-variant: #43483e;
 
-$color-outline: #74796D;
-$color-outline-variant: #C3C8BB;
-
-@mixin color-pair-surface {
-    color: $color-on-surface;
-    background-color: $color-surface;
-}
-
-@mixin color-pair-surface-variant {
-    color: $color-on-surface;
-    background-color: $color-surface;
-}
-
-@mixin color-pair-surface-dim {
-    color: $color-on-surface;
-    background-color: $color-surface-dim;
-}
-
-@mixin color-pair-surface-dim-variant {
-    color: $color-on-surface-variant;
-    background-color: $color-surface-dim;
-}
-
-@mixin color-pair-surface-bright {
-    color: $color-on-surface;
-    background-color: $color-surface-bright;
-}
-
-@mixin color-pair-surface-bright-variant {
-    color: $color-on-surface-variant;
-    background-color: $color-surface-bright;
-}
-
-@mixin color-pair-surface-container {
-    color: $color-on-surface;
-    background-color: $color-surface-container;
-}
-
-@mixin color-pair-surface-container-variant {
-    color: $color-on-surface-variant;
-    background-color: $color-surface-container;
-}
-
-@mixin color-pair-surface-container-lowest {
-    color: $color-on-surface;
-    background-color: $color-surface-container-lowest;
-}
-
-@mixin color-pair-surface-container-lowest-variant {
-    color: $color-on-surface-variant;
-    background-color: $color-surface-container-lowest;
-}
-
-@mixin color-pair-surface-container-low {
-    color: $color-on-surface;
-    background-color: $color-surface-container-low;
-}
-
-@mixin color-pair-surface-container-low-variant {
-    color: $color-on-surface-variant;
-    background-color: $color-surface-container-low;
-}
-
-@mixin color-pair-surface-container-high {
-    color: $color-on-surface;
-    background-color: $color-surface-container-high;
-}
-
-@mixin color-pair-surface-container-high-variant {
-    color: $color-on-surface-variant;
-    background-color: $color-surface-container-high;
-}
-
-@mixin color-pair-surface-container-highest {
-    color: $color-on-surface;
-    background-color: $color-surface-container-highest;
-}
-
-@mixin color-pair-surface-container-highest-variant {
-    color: $color-on-surface-variant;
-    background-color: $color-surface-container-highest;
-}
-
-@mixin color-pair-error {
-    color: $color-on-error;
-    background-color: $color-error;
-}
-
-@mixin color-pair-error-container {
-    color: $color-on-error-container;
-    background-color: $color-error-container;
-}
+$color-outline: #74796d;
+$color-outline-variant: #c3c8bb;
 
 body {
     background-color: $color-body-background;
@@ -154,13 +64,13 @@ body {
     color: $color-body-background;
 }
 
-.color-background-body-background {
-    background-color: $color-body-background;
-}
-
 @mixin color-pair-primary {
     background-color: $color-primary;
     color: $color-on-primary;
+}
+
+.color-pair-primary {
+    @include color-pair-primary;
 }
 
 @mixin color-pair-primary-container {
@@ -168,18 +78,17 @@ body {
     color: $color-on-primary-container;
 }
 
-.color-pair-primary {
-    @include color-pair-primary;
-}
-
 .color-pair-primary-container {
     @include color-pair-primary-container;
 }
 
-
 @mixin color-pair-secondary {
     background-color: $color-secondary;
     color: $color-on-secondary;
+}
+
+.color-pair-secondary {
+    @include color-pair-secondary;
 }
 
 @mixin color-pair-secondary-container {
@@ -187,19 +96,17 @@ body {
     color: $color-on-secondary-container;
 }
 
-.color-pair-secondary {
-    @include color-pair-secondary;
-}
-
-
 .color-pair-secondary-container {
     @include color-pair-secondary-container;
 }
 
-
 @mixin color-pair-tertiary {
     background-color: $color-tertiary;
     color: $color-on-tertiary;
+}
+
+.color-pair-tertiary {
+    @include color-pair-tertiary;
 }
 
 @mixin color-pair-tertiary-container {
@@ -207,10 +114,170 @@ body {
     color: $color-on-tertiary-container;
 }
 
-.color-pair-tertiary {
-    @include color-pair-tertiary;
-}
-
 .color-pair-tertiary-container {
     @include color-pair-tertiary-container;
 }
+
+
+@mixin color-pair-surface {
+    color: $color-on-surface;
+    background-color: $color-surface;
+}
+
+.color-pair-surface {
+    @include color-pair-surface;
+}
+
+@mixin color-pair-surface-variant {
+    color: $color-on-surface;
+    background-color: $color-surface;
+}
+
+.color-pair-surface-variant {
+    @include color-pair-surface-variant;
+}
+
+@mixin color-pair-surface-dim {
+    color: $color-on-surface;
+    background-color: $color-surface-dim;
+}
+
+.color-pair-surface-dim {
+    @include color-pair-surface-dim;
+}
+
+@mixin color-pair-surface-dim-variant {
+    color: $color-on-surface-variant;
+    background-color: $color-surface-dim;
+}
+
+.color-pair-surface-dim-variant {
+    @include color-pair-surface-dim-variant;
+}
+
+@mixin color-pair-surface-bright {
+    color: $color-on-surface;
+    background-color: $color-surface-bright;
+}
+
+.color-pair-surface-bright {
+    @include color-pair-surface-bright;
+}
+
+@mixin color-pair-surface-bright-variant {
+    color: $color-on-surface-variant;
+    background-color: $color-surface-bright;
+}
+
+.color-pair-surface-bright-variant {
+    @include color-pair-surface-bright-variant;
+}
+
+@mixin color-pair-surface-container {
+    color: $color-on-surface;
+    background-color: $color-surface-container;
+}
+
+.color-pair-surface-container {
+    @include color-pair-surface-container;
+}
+
+@mixin color-pair-surface-container-variant {
+    color: $color-on-surface-variant;
+    background-color: $color-surface-container;
+}
+
+.color-pair-surface-container-variant {
+    @include color-pair-surface-container-variant;
+}
+
+@mixin color-pair-surface-container-lowest {
+    color: $color-on-surface;
+    background-color: $color-surface-container-lowest;
+}
+
+.color-pair-surface-container-lowest {
+    @include color-pair-surface-container-lowest;
+}
+
+@mixin color-pair-surface-container-lowest-variant {
+    color: $color-on-surface-variant;
+    background-color: $color-surface-container-lowest;
+}
+
+.color-pair-surface-container-lowest-variant {
+    @include color-pair-surface-container-lowest-variant;
+}
+
+@mixin color-pair-surface-container-low {
+    color: $color-on-surface;
+    background-color: $color-surface-container-low;
+}
+
+.color-pair-surface-container-low {
+    @include color-pair-surface-container-low;
+}
+
+@mixin color-pair-surface-container-low-variant {
+    color: $color-on-surface-variant;
+    background-color: $color-surface-container-low;
+}
+
+.color-pair-surface-container-low-variant {
+    @include color-pair-surface-container-low-variant;
+}
+
+@mixin color-pair-surface-container-high {
+    color: $color-on-surface;
+    background-color: $color-surface-container-high;
+}
+
+.color-pair-surface-container-high {
+    @include color-pair-surface-container-high;
+}
+
+@mixin color-pair-surface-container-high-variant {
+    color: $color-on-surface-variant;
+    background-color: $color-surface-container-high;
+}
+
+.color-pair-surface-container-high-variant {
+    @include color-pair-surface-container-high-variant;
+}
+
+@mixin color-pair-surface-container-highest {
+    color: $color-on-surface;
+    background-color: $color-surface-container-highest;
+}
+
+.color-pair-surface-container-highest {
+    @include color-pair-surface-container-highest;
+}
+
+@mixin color-pair-surface-container-highest-variant {
+    color: $color-on-surface-variant;
+    background-color: $color-surface-container-highest;
+}
+
+.color-pair-surface-container-highest-variant {
+    @include color-pair-surface-container-highest-variant;
+}
+
+@mixin color-pair-error {
+    color: $color-on-error;
+    background-color: $color-error;
+}
+
+.color-pair-error {
+    @include color-pair-error;
+}
+
+@mixin color-pair-error-container {
+    color: $color-on-error-container;
+    background-color: $color-error-container;
+}
+
+.color-pair-error-container {
+    @include color-pair-error-container;
+}
+
