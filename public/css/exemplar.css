@@ -18,8 +18,12 @@ main {
 }
 
 .card-example {
-    width: 25vw;
-    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 20vw;
+    height: 20vw;
     margin-bottom: 1em;
 }
 
