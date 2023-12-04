@@ -18,10 +18,14 @@ $font-expressive-secondary: "Space Mono";
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+:root {
+    font-size: $base-size;
+}
+
 @mixin body-large {
     font-family: $font-main;
     font-weight: 400;
-    font-size: 1.14286em;
+    font-size: 1.14286rem;
     letter-spacing: 0.035714em;
     line-height: 1.5;      
 
@@ -31,7 +35,7 @@ $font-expressive-secondary: "Space Mono";
     font-family: $font-main;
     font-weight: 400;
     font-size: $base-size;
-    letter-spacing: 0.01786em;
+    letter-spacing: 0.01786rem;
     line-height: 1.42857;
 }    
 
@@ -39,7 +43,7 @@ $font-expressive-secondary: "Space Mono";
     font-family: $font-main;
     font-weight: 400;
     font-size: .85714em;
-    letter-spacing: 0.02857em;
+    letter-spacing: 0.02857rem;
     line-height: 1.33333;    
 }
 
@@ -75,7 +79,7 @@ body, .md.sys.typescale.body-medium, .body-medium {
 @mixin display-large {
     font-family: $font-expressive-primary;
     font-weight: 400;
-    font-size: 4.07143em;
+    font-size: 4.07143rem;
     letter-spacing: -0.01789em;
     line-height: 1.25;
 }
@@ -83,7 +87,7 @@ body, .md.sys.typescale.body-medium, .body-medium {
 @mixin display-medium {
     font-family: $font-expressive-primary;
     font-weight: 400;
-    font-size: 3.21429em;
+    font-size: 3.21429rem;
     letter-spacing: 0;
     line-height: 1.25;
 }
@@ -91,7 +95,7 @@ body, .md.sys.typescale.body-medium, .body-medium {
 @mixin display-small {
     font-family: $font-expressive-primary;
     font-weight: 400;
-    font-size: 2.75em;
+    font-size: 2.75rem;
     letter-spacing: 0;
     line-height: 1.25;
 }
@@ -130,7 +134,7 @@ body, .md.sys.typescale.body-medium, .body-medium {
 @mixin title-large {
     font-family: $font-main;
     font-weight: 400;
-    font-size: 1.57143em;
+    font-size: 1.57143rem;
     letter-spacing: 0;
     line-height: 2;
 }
@@ -138,8 +142,8 @@ body, .md.sys.typescale.body-medium, .body-medium {
 @mixin title-medium {
     font-family: $font-main;
     font-weight: 500;
-    font-size: 1.14286em;
-    letter-spacing: 0.01071em;
+    font-size: 1.14286rem;
+    letter-spacing: 0.01071rem;
     line-height: 1.71429;  
 }
 
@@ -147,7 +151,7 @@ body, .md.sys.typescale.body-medium, .body-medium {
     font-family: $font-main;
     font-weight: 500;
     font-size: 1.14286em;
-    letter-spacing: 0.00714em;
+    letter-spacing: 0.00714rem;
     line-height: 1.42857;
 }
 
@@ -182,7 +186,7 @@ h3, md.sys.typescale.title-small, .title-small {
 md.sys.typescale.headline-large, .headline-large {
     font-family: $font-expressive-secondary;
     font-weight: 400;
-    font-size: 2em;
+    font-size: 2rem;
     letter-spacing: 0;
     line-height: 2.5;  
 }
@@ -190,7 +194,7 @@ md.sys.typescale.headline-large, .headline-large {
 md.sys.typescale.headline-medium, .headline-medium {
     font-family: $font-expressive-secondary;
     font-weight: 400;
-    font-size: 1.75em;
+    font-size: 1.75rem;
     letter-spacing: 0;
     line-height: 2.25;  
 }
@@ -198,7 +202,7 @@ md.sys.typescale.headline-medium, .headline-medium {
 md.sys.typescale.headline-small, .headline-small {
     font-family: $font-expressive-secondary;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     letter-spacing: 0;
     line-height: 2;
 }
